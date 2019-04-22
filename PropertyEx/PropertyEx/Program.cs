@@ -54,6 +54,8 @@ namespace PropertyEx
                 demoField = value;
             }
         }
+        // 프로퍼티를 읽기전용(get접근자만 구현 했을 때)
+        // 쓰기전용(set접근자만 구현 했을 때)으로 정의할 수 있다.
 
     }
 
