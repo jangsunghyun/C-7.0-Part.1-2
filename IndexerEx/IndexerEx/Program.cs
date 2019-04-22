@@ -37,6 +37,7 @@ namespace IndexerEx
 
         public int this[int idx]
         {
+
             get
             {
                 return array[idx];
@@ -46,6 +47,7 @@ namespace IndexerEx
             {
                 if (idx >= array.Length)
                 {
+                    Console.WriteLine($"배열 사이즈 조정 : {array.Length}");
                     Array.Resize<int>(ref array, idx + 1);
                     Console.WriteLine($"배열 사이즈 조정 : {array.Length}");
                 }
@@ -53,10 +55,12 @@ namespace IndexerEx
                 array[idx] = value;
             }
         }
+
         public int Length
         {
             get { return array.Length; }
         }
+
     }
 
     class Program
