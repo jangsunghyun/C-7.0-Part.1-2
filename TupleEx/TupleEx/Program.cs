@@ -20,10 +20,11 @@ namespace TupleEx
     {
         static void Main(string[] args)
         {
+
             var aa = ("홍길동", 40);
             Console.WriteLine($"{aa.Item1}, {aa.Item2}");
 
-            var bb = (Name: "홍길복", Age: 55);
+            var bb = (Name : "홍길복", Age : 55);
             Console.WriteLine($"{bb.Name},{bb.Age}");
 
             var (name, age) = bb;  //bb를 복사.. 
@@ -31,6 +32,8 @@ namespace TupleEx
 
             bb = aa;
             Console.WriteLine($"{bb.Name} , {bb.Age}");
+
         }
     }
 }
+
