@@ -45,7 +45,7 @@ namespace InterfaceEx2
         {
             MyClass mc = new MyClass();
             mc.myMethod("부모");
-            mc.myMethod("자식",3);
+            mc.myMethod("자식",5);
         }
     }
 }
